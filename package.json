@@ -1,0 +1,25 @@
+{
+  "name": "node-deploy-script",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:fynn90/node-deploy-script.git",
+  "author": "Fynn <fynn.90@outlook.com>",
+  "license": "MIT",
+  "scripts": {
+    "deploy": "npx ts-node ./src/index.ts"
+  },
+  "dependencies": {
+    "@types/archiver": "^3.0.0",
+    "@types/ssh2": "^0.5.38",
+    "archiver": "^3.0.0",
+    "ssh2": "^0.8.5",
+    "ts-node": "^8.3.0"
+  },
+  "devDependencies": {
+    "@types/typescript": "^2.0.0",
+    "@typescript-eslint/eslint-plugin": "^1.12.0",
+    "@typescript-eslint/parser": "^1.12.0",
+    "eslint-config-prettier": "^6.0.0",
+    "typescript": "^3.5.3"
+  }
+}
