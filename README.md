@@ -12,12 +12,12 @@
 
 ```json
 {
-  "host": "192.168.1.110", // 服务器地址
-  "username": "name", // 账户
-  "password": "password", // 密码
-  "path": "/data/ff/web", // 服务器端目录
-  "port": 22, // 端口号
-  "localDir": "dist/" // 本地打包目录
+  "host": "192.168.1.110", //服务器地址
+  "username": "name", //账户
+  "password": "password", //密码
+  "path": "/data/ff/web", //服务器端目录
+  "port": 22, //端口号
+  "localDir": "dist/" //本地打包目录
 }
 ```
 
