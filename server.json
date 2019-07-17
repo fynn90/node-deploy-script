@@ -1,0 +1,8 @@
+{
+  "host": "192.168.1.110",
+  "username": "name",
+  "password": "password",
+  "path": "/data/ff/web",
+  "port": 22,
+  "localDir": "dist/"
+}

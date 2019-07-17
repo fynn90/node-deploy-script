@@ -1,12 +1,12 @@
 {
   "name": "node-deploy-script",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./deploy/index.ts",
   "repository": "git@github.com:fynn90/node-deploy-script.git",
   "author": "Fynn <fynn.90@outlook.com>",
   "license": "MIT",
   "scripts": {
-    "deploy": "npx ts-node ./src/index.ts"
+    "deploy": "ts-node ./deploy/index.ts"
   },
   "dependencies": {
     "@types/archiver": "^3.0.0",

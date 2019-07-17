@@ -14,11 +14,11 @@ exports.uploadFile = function(config: SSHConfig, localPath: string, remotePath: 
   const local = path.join(localPath, fileName);
   const remote = path.join(remotePath, fileName);
   var shellList = [
-    `cd ${remotePath}\n`,
-    `unzip -ol ${fileName}\n`,
-    "rm -rf backup.zip\n",
-    `mv ${fileName} backup.zip\n`,
-    "exit\n"
+    `cd ${remotePath}\n`, // 进入服务器远程目录
+    `unzip -ol ${fileName}\n`, // 解压
+    "rm -rf backup.zip\n", // 删除上个备份包
+    `mv ${fileName} backup.zip\n`, // 备份
+    "exit\n" // 退出
   ];
   console.log("准备上传⏫文件!");
   const conn = new Client();

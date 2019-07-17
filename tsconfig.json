@@ -14,12 +14,10 @@
     "baseUrl": ".",
     "types": [
       "node",
-      "jest",
-      "webpack-env"
     ],
     "paths": {
       "@/*": [
-        "src/*"
+        "deploy/*"
       ]
     },
     "lib": [
@@ -30,7 +28,7 @@
     ]
   },
   "include": [
-    "src/**/*.ts",
+    "deploy/**/*.ts",
   ],
   "exclude": [
     "node_modules"
