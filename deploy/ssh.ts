@@ -15,7 +15,7 @@ exports.uploadFile = function(config: SSHConfig, localPath: string, remotePath: 
   const remote = path.join(remotePath, fileName);
   var shellList = [
     `cd ${remotePath}\n`, // 进入服务器远程目录
-    `unzip -ol ${fileName}\n`, // 解压
+    `unzip -o ${fileName}\n`, // 解压
     "rm -rf backup.zip\n", // 删除上个备份包
     `mv ${fileName} backup.zip\n`, // 备份
     "exit\n" // 退出
