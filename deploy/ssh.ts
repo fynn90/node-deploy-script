@@ -12,7 +12,7 @@ interface SSHConfig {
 
 exports.uploadFile = function(config: SSHConfig, localPath: string, remotePath: string, fileName: string) {
   const local = path.join(localPath, fileName);
-  const remote = path.join(remotePath, fileName);
+  const remote = remotePath+'/'+fileName;
   var shellList = [
     `cd ${remotePath}\n`, // 进入服务器远程目录
     `unzip -o ${fileName}\n`, // 解压
